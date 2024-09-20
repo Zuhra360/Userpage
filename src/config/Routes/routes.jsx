@@ -9,7 +9,7 @@ import { Home } from "../../components/ui/MainPage/Home/Home";
 
 export const router = createBrowserRouter([
   {
-    path: "Userpage",
+    path: "/",
     element: <Login />,
     
   },
