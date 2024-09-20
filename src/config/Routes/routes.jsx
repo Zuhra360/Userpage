@@ -1,21 +1,30 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Todolist } from "../../components/Todolist/Todolist";
-import { Myday } from "../../components/Todolist/Myday/Myday";
+import { Login } from "../../components/pages/Login";
+import { MainPage } from "../../components/pages/MainPage";
+import { SignUp } from "../../components/ui/MainPage/SignUp/SignUp";
+import { Home } from "../../components/ui/MainPage/Home/Home";
+
 
 
 
 export const router = createBrowserRouter([
-  
   {
-    path: "/",
-    element: <Todolist />,
-    children: [
-      {
-        path: "Myday",
-        element: <Myday />,
-      },
-     
-
-    ],
+    path: "Userpage",
+    element: <Login />,
+    
   },
+  {
+    path: "signup",
+    element: <SignUp />,
+    
+  },
+  {
+    path: "mainpage",
+    element: <MainPage/>,
+  },
+  {
+    path: "Home",
+    element: <Home/>,
+  },
+
 ]);
